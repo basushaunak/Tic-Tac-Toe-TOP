@@ -5,9 +5,12 @@
     box-sizing: border-box;
 }
 
+html{
+    font-family: "Roboto",sans-serif;
+}
 
 body{
-    background-color: hsl(0, 0%, 20%);
+    background-color:hsl(0, 0%, 89%);
     /* background-image: linear-gradient(to top left,  hsl(0, 0%, 20%),hsl(0, 0%, 60%)); */
 }
 
@@ -37,16 +40,20 @@ h1{
     max-width: 1000px;
     width: 70%;
     margin-inline: auto;
-    background-image: linear-gradient(to bottom right,  hsl(0, 0%, 99%),hsl(0, 0%, 80%));
+    background-image: linear-gradient(to bottom right,  hsl(0, 0%, 99%),hsl(0, 0%, 70%));
 }
 
-.game-grid{
+#game-grid{
     display: grid;
     width: 300px;
     grid-template-columns: repeat(3,1fr);
     justify-content: center;
     align-items: center;
     margin-inline: auto;
+}
+
+#game-grid:hover{
+    cursor: pointer;
 }
 
 .game-cell{
@@ -95,16 +102,17 @@ h1{
 }
 
 .player-details{
-    width: 70%;
-    max-width: 300px;
+    width: 40%;
+    min-width: 375px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1em;
-    justify-content: center;
+    gap: 0.5rem;
+    justify-content: space-around;
     align-items: center;
     margin-inline: auto;
     padding-block-end: 2em;
 }
+
 .player-details > button{
     grid-column: span 2;
     padding: 0.5em 1em;
@@ -133,7 +141,7 @@ h1{
     font-size: 3rem;
     color: blue;
 }
-
+/* 
 #game-in-progress{
     display: none;;
-}
+} */
