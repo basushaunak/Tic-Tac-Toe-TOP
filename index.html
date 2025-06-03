@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,11 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./css/styles.css" rel="stylesheet">
     <script src="./script/script.js" defer></script>
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon">
     <title>Tic-Tac-Toe for The Odin Project (JS)</title>
 </head>
 <body>
-    <header></header>
-    <main></main>
+    <div class="wrapper">
+    <header>
+        <div class="header">
+            <img src="./images/TicTacToe.png" class="image" alt="Tick Tack Toe">
+            <h1><span id="project-name">Tic-Tac-Toe</span><br><em>for</em><br><strong>The Odin Project</strong></h1>
+        </div>
+    </header>
+    <main>
+        <div class="player-details">
+            <label for="player1">Player 1 Name</label>
+            <input id="player1" name="player1" title="Enter First Player's name">
+            <label for="player2">Player 2 Name</label>
+            <input id="player2" name="player2" title="Enter Second Player's name">
+            <button id="btn-start-game" type="button">Start Game</button>
+        </div>
+        <!-- <div class="game-moves">
+            <label for="player-marking-position">Player 1 Move</label>
+            <input id="player-marking-position" name="player-marking-position" title="Player 1 Make a Move:" min="1" max="9">
+            <button id="btn-player-marked" type="button">Go!</button>
+        </div> -->
+        <div id="game-in-progress">
+            <div class="game-grid">
+                <div id="cell1" class="game-cell"></div>
+                <div id="cell2" class="game-cell"></div>
+                <div id="cell3" class="game-cell"></div>
+                <div id="cell4" class="game-cell"></div>
+                <div id="cell5" class="game-cell"></div>
+                <div id="cell6" class="game-cell"></div>
+                <div id="cell7" class="game-cell"></div>
+                <div id="cell8" class="game-cell"></div>
+                <div id="cell9" class="game-cell"></div>
+            </div>
+            <p id="player-move">Waiting for Player 1...</p>
+        </div>
+    </main>
     <footer></footer>
+    </div>
 </body>
 </html>
