@@ -128,7 +128,7 @@ h1{
     width: 2.5em
 } */
 
-#player-move{
+#player-move-prompt{
     text-align: center;
     font-size: 2rem;
     font-style:italic;
