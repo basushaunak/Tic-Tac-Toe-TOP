@@ -51,12 +51,12 @@ function playGame(){
 
   function checkWinner(){
     // returns -2 if Draw, -1 if still to be continued, 0 if plaaaaayer 1 won, 1 if player 2 won
-    for(let i = 0;i<2;i++){
+    for(let i = 0;i<3;i++){
       if(gameGridArray[i][0] === gameGridArray[i][1] && gameGridArray[i][0] === gameGridArray[i][2]){
         return gameGridArray[i][0];
       }
     }
-    for(let i = 0;i<2;i++){
+    for(let i = 0;i<3;i++){
       if(gameGridArray[0][i] === gameGridArray[1][i] && gameGridArray[0][i] === gameGridArray[2][i]){
         return gameGridArray[0][i];
       }
